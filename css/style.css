@@ -13,44 +13,78 @@
     font-family: "Inter";
     src: url(../assets/fonts/inter/Inter-VariableFont_slnt\,wght.ttf);
 }
-
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
 
+body {
+    color: #ffffff;
+}
+
+/* classes generixas */
+
+.layout-grid {
+    border: 1px solid salmon;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
 /* mobile first */
 
+/* header */
+
 header {
-    background-color: black;
-}
-/* .layout-grid {
-    max-width: 361px;
-    justify-content: center;
-} */
-
-/* .header-top {
-
-} */
-
-/* .header-bottom {
-    width: 100%;
-    height: 92px;
+    height: 60px;
     background-color: #1B1426;
+}
+
+/* header top */
+header .header-top {
+    display: none;
+}
+
+/* header bottom */
+
+header .header-bottom {
+    height: 100%;
+}
+
+.aliamento-between-center {
     display: flex;
     justify-content: space-between;
-} */
+    align-items: center;
+}
+
+header .header-bottom img.logo {
+    width: 86px;
+    height: auto;
+}
+
+header .header-bottom nav {
+    display: none;
+}
+
+header .header-bottom .menu-usuarios {
+    display: none;
+}
 
 /* ****Main***** */
 
-.banner {
+/* .banner {
     background-image: url(../assets/images/banner.png);
     width: 100%;
     height: 618px;
 }
 
 
-/* h1 {
+.h1-banner {
     font-family: "Titillium-Web";
+    font-size: 40px;
+    color: white;
+
 } */
