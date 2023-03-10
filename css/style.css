@@ -24,10 +24,10 @@ body {
     color: #ffffff;
 }
 
-/* classes generixas */
+/* classes genericas */
 
 .layout-grid {
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     width: 90%;
     height: 100%;
     margin: 0 auto;
@@ -66,7 +66,18 @@ header .header-bottom img.logo {
 }
 
 header .header-bottom nav {
-    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: calc(100vh - 60px);
+
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    justify-content: space-between;
+    background-image: linear-gradient(to top, grey, white);
+    opacity: 0.8;
 }
 
 header .header-bottom .menu-usuarios {
@@ -75,7 +86,7 @@ header .header-bottom .menu-usuarios {
 
 /* ****Main***** */
 
-/* .banner {
+.banner {
     background-image: url(../assets/images/banner.png);
     width: 100%;
     height: 618px;
@@ -87,4 +98,4 @@ header .header-bottom .menu-usuarios {
     font-size: 40px;
     color: white;
 
-} */
+} 
