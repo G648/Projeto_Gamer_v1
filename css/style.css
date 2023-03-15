@@ -27,6 +27,7 @@
 .mostrar-menu {
     left: 0 !important;
 }
+
 .layout-grid {
     /* border: 1px solid salmon; */
     width: 90%;
@@ -89,7 +90,7 @@ header .header-bottom nav {
 }
 
 /* somente links "filhos diretos" */
-header .header-bottom nav > a {
+header .header-bottom nav>a {
     padding: 30px 0;
     color: white;
     font-family: Inter;
@@ -100,7 +101,7 @@ header .header-bottom nav > a {
     border-bottom: 2px solid #F9AA01;
 }
 
-header .header-bottom nav > a:last-of-type {
+header .header-bottom nav>a:last-of-type {
     border-bottom: none;
 }
 
@@ -113,7 +114,7 @@ header .header-bottom nav .midias-sociais {
 }
 
 /* menu lateral direito - ícones */
-.menu2{
+.menu2 {
     position: fixed;
     top: 60px;
     right: -20vw;
@@ -124,7 +125,7 @@ header .header-bottom nav .midias-sociais {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-image: linear-gradient(to top bottom, rgba(27, 30, 38, 0.7 ), rgba(27, 20, 38, 0.4));
+    background-image: linear-gradient(to top bottom, rgba(27, 30, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(20px);
 
     transition: right 0.4s;
@@ -146,8 +147,9 @@ main {
     height: 664px;
     background-image: url(../assets/images/banner.png);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -161,7 +163,7 @@ main section h1 {
     font-family: TitilliumWeb-Black;
 }
 
-main section .botao-sobre{
+main section .botao-sobre {
     font-family: titilium-bold;
     font-size: 24px;
     background-color: #F9AA01;
@@ -170,8 +172,118 @@ main section .botao-sobre{
     border-radius: 8px;
     border-color: #F9AA01;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 35%;
 }
 
+/* sessão cards fifa23 e cs_go */
+
+.fundo_jogos {
+    width: 100vw;
+    height: 590px;
+    background-color: #1B1426;
+}
+
+.cards_jogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+main section article img {
+    width: 80vw;
+    height: 170px;
+    display: flex;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 768px) {
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    header {
+        position: static;
+        height: 140px;
+    }
+
+    header .menu-pontinhos,
+    header .menu-hamburger,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .midias-sociais{
+    display: none;
+}
+
+header .header-bottom im.logo {
+    width: 200px;
+}
+
+header .header-bottom .menu-user {
+    position: fixed;
+    flex-direction: row;
+    width: 180px;
+    height: 50px;
+    background-color: transparent;
+}
+
+main {
+    margin-top: 0;
+}
+
+header .header-bottom nav {
+    position: static;
+    width: 440px;
+    height: 50px;
+    flex-direction: row;
+
+}
+}
+
+
+/* ---------- sessão progamer ------------ */
+/* ---------- titulo e fundo  ------------ */
+
+.time_progamer {
+    width: 100vw;
+    height: 1536px;
+    background-color: #F9AA01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_progamer {
+    font-family: TitilliumWeb-Black;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: none;
+    padding-top: 25%;
+}
+
+hr {
+    border: 2px solid black;
+    width: 50vw;
+    margin: 50px auto 100px;
+}
+
+/* ----------- cards personagens ----------- */
+
+.cards_progamer {
+    width: 90vw;
+    height: 1250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+
+.imagens_personagens_cards {
+    width: 86vw;
+    height: 511px;
+}
