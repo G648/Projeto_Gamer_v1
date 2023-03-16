@@ -200,7 +200,21 @@ main section article img {
 
 @media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
+
+    #menu-user{
+        right: 0 !important;
+        backdrop-filter: blur(0);
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+
+        width: 150px;
+        height: 90px;
+    }
+
     .layout-grid {
         width: 100%;
         max-width: 1200px;
@@ -211,39 +225,99 @@ main section article img {
         height: 140px;
     }
 
+    header .header-top {
+        display: block;
+        height: 50px;
+        border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .contatos {
+        width: 415px;
+        display: flex;
+        justify-content: space-between;
+
+        font-family: Inter;
+        font-weight: 400;
+        color: white;
+    }
+
+    header .header-top .contatos>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header .header-top .midias-sociais {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     header .menu-pontinhos,
-    header .menu-hamburger,
+    header .mostrarMenu,
     header .header-bottom nav .phone,
     header .header-bottom nav .email,
-    header .header-bottom nav .midias-sociais{
-    display: none;
-}
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
 
-header .header-bottom im.logo {
-    width: 200px;
-}
+    header .header-bottom {
+        height: 90px;
+    }
 
-header .header-bottom .menu-user {
-    position: fixed;
-    flex-direction: row;
-    width: 180px;
-    height: 50px;
-    background-color: transparent;
-}
+    header .header-bottom img.logo {
+        width: 200px;
+    }
 
-main {
-    margin-top: 0;
-}
+    header .header-bottom .menu-user {
+        position: fixed;
+        flex-direction: row;
+        width: 180px;
+        height: 50px;
+        background-color: transparent;
+    }
 
-header .header-bottom nav {
-    position: static;
-    width: 440px;
-    height: 50px;
-    flex-direction: row;
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    
+    header .header-bottom nav>a {
+        border: none;
+        font-size: 14px;
+    }
+    
+    main {
+        margin-top: 0;
+    }
 
-}
-}
+    main .banner {
+        background-image: url(../assets/images/Banner_background_1\ 1.png);
+        width: 100vw;
+        height: 722px;
+    }
 
+    main .titulos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 722px;
+    }
+
+    main .titulos h1 {
+        font-family: TitilliumWeb-Black ;
+        font-weight: 80px;
+
+    }
+}
 
 /* ---------- sessão progamer ------------ */
 /* ---------- titulo e fundo  ------------ */

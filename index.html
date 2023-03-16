@@ -14,7 +14,7 @@
     <header>
 
         <div class="header-top">
-            <div class="layout-grid">
+            <div class="layout-grid alinhamento-between-center">
                 <div class="contatos">
                     <div class="phone">
                         <img src="./assets/icons/icone_telefone.svg" alt="Ícone de telefone">
@@ -28,13 +28,13 @@
 
                 <div class="midias-sociais">
                     <a href="">
-                        <img src="./assets/icons/facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
+                        <img src="../Projeto_Gamer_v1/assets/icons/icone_facebook.svg" alt="Imagem link do Facebook da empresa Gamer">
                     </a>
                     <a href="">
-                        <img src="./assets/icons/linkedin.svg" alt="Imagem link do Linkedin da empresa Gamer">
+                        <img src="../Projeto_Gamer_v1/assets/icons/icone_linkdin.svg" alt="Imagem link do Linkedin da empresa Gamer">
                     </a>
                     <a href="">
-                        <img src="./assets/icons/intagram.svg" alt="Imagem link do Instagram da empresa Gamer">
+                        <img src="../Projeto_Gamer_v1/assets/icons/icone_instagram.svg" alt="Imagem link do Instagram da empresa Gamer">
                     </a>
                 </div>
             </div>
@@ -44,7 +44,7 @@
             <div class="layout-grid alinhamento-between-center">
                 <!-- menu hamburger -->
                 <img onclick="mostrarMenu()" src="./assets/icons/menu-hamburguer.svg"
-                    alt="Ícone para abrir e fechar o menu de celular">
+                    alt="Ícone para abrir e fechar o menu de celular" class="mostrarMenu">
 
                 <img class="logo" src="./assets/images/logotipo-gamer.png"
                     alt="Logotipo da empresa. Texto Gamer com um joystick ao centro">
@@ -83,7 +83,7 @@
 
                 <!-- menu 3 pontinhos -->
                 <img onclick="mostrarMenuUser()" src="./assets/icons/menu-tres-pontos.svg"
-                    alt="Ícone 3 pontinhos, abre o menu de usuários">
+                    alt="Ícone 3 pontinhos, abre o menu de usuários" class="menu-pontinhos" >
 
                 <div id="menu-user" class="menu2">
                     <a href="">
@@ -102,12 +102,13 @@
 
     <main>
         <section class="banner">
-            <h1>liga gamers</h1>
-            <button class="botao-sobre"> sobre </button>
+            <div class="titulos">
+                <h1>liga gamers</h1>
+                <button class="botao-sobre"> sobre </button>
+            </div>
         </section>
 
         <section class="fundo_jogos">
-            
             <article class=" layout-grid cards_jogos">
                 <img src="assets/images/Group 1.png" alt="card fifa">
                 <img src="assets/images/Card CS.png" alt="card cs_go">
@@ -118,7 +119,7 @@
             <h1 class="titulo_progamer">entre para o time progamer</h1>
             <hr>
 
-            <article class=" layout_grid cards_progamer">
+            <article class="layout-grid cards_progamer">
                 <img class="imagens_personagens_cards" src="assets/images/Primeiro card jogos.png" alt="primeiro card sobre uma personagem de jogo">
                 <img class="imagens_personagens_cards" src="assets/images/Segundo card jogos.png"
                     alt="segundo card sobre a personagem de um jogo chamado league o legends, o nome dela é jinx">
