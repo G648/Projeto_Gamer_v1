@@ -17,6 +17,11 @@
     src: url(../assets/fonts/titillium/TitilliumWeb-Bold.ttf);
 }
 
+@font-face {
+    font-family: quicksand;
+    src: url(../assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -88,6 +93,7 @@ header .header-bottom nav {
 
     transition: left 0.4s;
 }
+
 
 /* somente links "filhos diretos" */
 header .header-bottom nav>a {
@@ -198,17 +204,124 @@ main section article img {
     border-radius: 8px;
 }
 
+.time_progamer {
+    width: 100vw;
+    height: 1536px;
+    background-color: #F9AA01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_progamer {
+    font-family: TitilliumWeb-Black;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: none;
+    padding-top: 25%;
+}
+
+section hr {
+    border: 2px solid black;
+    width: 50vw;
+    margin: 50px auto 100px;
+}
+
+/* ----------- cards personagens ----------- */
+
+.cards_progamer {
+    width: 90vw;
+    height: 1250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.imagens_personagens_cards {
+    width: 86vw;
+    height: 511px;
+}
+
+/* ------------ footer mobile ------------- */
+
+footer {
+    background-image: url(../assets/images/backgroung_footer\ 1.png);
+}
+
+footer #sobre {
+    padding-top: 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 100%;
+    width: 358px;
+    height: 316px;
+}
+
+footer #sobre p {
+    width: 320px;
+    padding-top:5%;
+
+    color: white;
+    font-family: quicksand;
+    font-size:20px ;
+}
+
+footer #midias-sociais-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* footer links úteis */
+
+footer #links-uteis{
+    border: 1px solid white;
+}
+
+footer .titulo-footer{
+    color: white;
+    font-family: TitilliumWeb-Black;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+footer hr {
+    border: 2px solid #F9AA01;
+    width: 126px;
+}
+
+footer .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+footer .menu-footer a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {}
 
 @media screen and (min-width: 1440px) {
 
-    #menu-user{
+    #menu-user {
         right: 0 !important;
         backdrop-filter: blur(0);
         position: static;
         display: flex;
         flex-direction: row;
-        justify-content:space-between;
+        justify-content: space-between;
         align-items: center;
 
         width: 150px;
@@ -216,7 +329,7 @@ main section article img {
     }
 
     .layout-grid {
-        width: 100%;
+        width: 100vw;
         max-width: 1200px;
     }
 
@@ -286,14 +399,14 @@ main section article img {
         padding: 0;
         flex-direction: row;
         align-items: center;
-        
+
     }
-    
-    header .header-bottom nav>a {
+
+    header .header-bottom nav>a:hover {
+        color: #F9AA01;
         border: none;
-        font-size: 14px;
     }
-    
+
     main {
         margin-top: 0;
     }
@@ -313,51 +426,71 @@ main section article img {
     }
 
     main .titulos h1 {
-        font-family: TitilliumWeb-Black ;
+        font-family: TitilliumWeb-Black;
         font-weight: 80px;
 
     }
+
+    main .fundo_jogos .cards_jogos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .fundo_jogos img {
+        width: 556px;
+        height: 313px;
+    }
+
+     /* .titulo_progamer h1 {
+        
+    } */
+
+    main .titulo_progamer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: TitilliumWeb-Black;
+        font-size: 48px;
+        padding-top: 0;
+        width: 50vw;
+        height: 200px;
+    }
+
+    hr{
+        border: 1px solid black;
+        width: 250px;
+    }
+
+    main .time_progamer {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    main .time_progamer .cards_progamer {
+        display: flex;
+        flex-direction: row;
+   
+    }
+
+    main .time_progamer article img {
+        width: 425px;
+        height: 692px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* ---------- footer desktop ---------- */
+
+
+
 }
 
 /* ---------- sessão progamer ------------ */
 /* ---------- titulo e fundo  ------------ */
-
-.time_progamer {
-    width: 100vw;
-    height: 1536px;
-    background-color: #F9AA01;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.titulo_progamer {
-    font-family: TitilliumWeb-Black;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: black;
-    text-shadow: none;
-    padding-top: 25%;
-}
-
-hr {
-    border: 2px solid black;
-    width: 50vw;
-    margin: 50px auto 100px;
-}
-
-/* ----------- cards personagens ----------- */
-
-.cards_progamer {
-    width: 90vw;
-    height: 1250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 2px solid red;
-}
-
-.imagens_personagens_cards {
-    width: 86vw;
-    height: 511px;
-}
