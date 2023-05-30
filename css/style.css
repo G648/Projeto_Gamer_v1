@@ -36,7 +36,7 @@
 .layout-grid {
     /* border: 1px solid salmon; */
     width: 90%;
-    height: 100%;
+    max-width: 768px;
     margin: 0 auto;
 }
 
@@ -244,6 +244,86 @@ section hr {
     height: 511px;
 }
 
+/* ---------------- sessão cards noticias -------------*/
+
+/* .news-cards-container {
+    border: 2px solid white;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+   
+
+} */
+
+.news {
+    /* dis */
+    background-image: url(../assets/images/backgrund_notícias_desktop.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 1440px;
+}
+
+.news::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+}
+
+.news h2 {
+    font-family: "TitilliumWeb-Black";
+    color: white;
+    font-size: 64px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.news hr {
+    position: relative;
+    width: 200px;
+    border: 2px #F9AA01 solid;
+}
+
+.box-news h4 {
+    font-family: "TitilliumWeb-Black";
+    font-size: 24px;
+    font-weight: 1;
+    padding: 25px 25px 0 25px;
+}
+
+.box-news p {
+    font-family: "quicksand";
+    padding: 20px 25px 0 25px;
+    font-size: 16px;
+}
+
+.news-cards {
+    margin-bottom: 20px;
+}
+
+.news-cards img {
+    width: 100%;
+}
+
+.box-news {
+    width: 285px;
+}
+
+.box-news {
+    border-radius: 8px;
+    width: 285px;
+    height: 183px;
+    background-image: linear-gradient(141.58deg, rgba(37, 26, 52, 0.34) 0%, rgba(5, 1, 12, 0.79) 98.48%);
+    backdrop-filter: blur(3px);
+    color: white;
+}
+
 /* ------------ footer mobile ------------- */
 
 footer {
@@ -264,11 +344,11 @@ footer #sobre {
 
 footer #sobre p {
     width: 320px;
-    padding-top:5%;
+    padding-top: 5%;
 
     color: white;
     font-family: quicksand;
-    font-size:20px ;
+    font-size: 20px;
 }
 
 footer #midias-sociais-footer {
@@ -279,11 +359,11 @@ footer #midias-sociais-footer {
 
 /* footer links úteis */
 
-footer #links-uteis{
+footer #links-uteis {
     border: 1px solid white;
 }
 
-footer .titulo-footer{
+footer .titulo-footer {
     color: white;
     font-family: TitilliumWeb-Black;
     font-size: 30px;
@@ -441,7 +521,7 @@ footer .menu-footer a {
         height: 313px;
     }
 
-     /* .titulo_progamer h1 {
+    /* .titulo_progamer h1 {
         
     } */
 
@@ -457,7 +537,7 @@ footer .menu-footer a {
         height: 200px;
     }
 
-    hr{
+    hr {
         border: 1px solid black;
         width: 250px;
     }
@@ -472,7 +552,7 @@ footer .menu-footer a {
     main .time_progamer .cards_progamer {
         display: flex;
         flex-direction: row;
-   
+
     }
 
     main .time_progamer article img {
